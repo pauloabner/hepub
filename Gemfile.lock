@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    hepub (0.0.1)
+      gepub (= 0.6.9.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -17,24 +23,24 @@ GEM
     i18n (0.7.0)
     json (1.8.3)
     mini_portile2 (2.1.0)
-    minitest (5.8.3)
+    minitest (5.9.0)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
-    rspec (3.4.0)
-      rspec-core (~> 3.4.0)
-      rspec-expectations (~> 3.4.0)
-      rspec-mocks (~> 3.4.0)
-    rspec-core (3.4.4)
-      rspec-support (~> 3.4.0)
-    rspec-expectations (3.4.0)
+    rake (10.5.0)
+    rspec (3.0.0)
+      rspec-core (~> 3.0.0)
+      rspec-expectations (~> 3.0.0)
+      rspec-mocks (~> 3.0.0)
+    rspec-core (3.0.4)
+      rspec-support (~> 3.0.0)
+    rspec-expectations (3.0.4)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
-    rspec-mocks (3.4.1)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
-    rspec-support (3.4.1)
+      rspec-support (~> 3.0.0)
+    rspec-mocks (3.0.4)
+      rspec-support (~> 3.0.0)
+    rspec-support (3.0.4)
     rubyzip (1.2.0)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
@@ -44,11 +50,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug
-  factory_girl
-  gepub (= 0.6.9.2)
+  bundler (~> 1.11)
+  byebug (= 9.0.5)
+  factory_girl (= 4.7.0)
+  hepub!
+  rake (~> 10.0)
   rspec
-  rspec-core
+  rspec-core (= 3.0.4)
 
 BUNDLED WITH
    1.11.2
