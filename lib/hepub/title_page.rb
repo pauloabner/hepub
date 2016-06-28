@@ -8,15 +8,15 @@ module Hepub
     end
 
     def to_s
-      template = Util.file_to_str @template_file
+      template = Util.file_to_str template_file
       tags.each do |tag|
-        template.gsub!("{{ #{tag} }}", @metadata.value_of(tag) )
+        template.gsub!("{{ #{tag} }}", metadata.value_of(tag) )
       end
       template
     end
 
     def tags
-      Util.tags_from_file(@template_file)
+      Util.tags_from_file(template_file)
     end
   end
 end
