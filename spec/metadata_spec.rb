@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-RSpec.describe Metadata do
-  subject { Metadata.new(options={ title: 'TITULO' }) }
+RSpec.describe Hepub::Metadata do
+  subject { Hepub::Metadata.new(options={ title: 'TITULO' }) }
   describe '#value_of' do
     it 'returns de correct value' do
       expect(subject.value_of('TITLE')).to eq 'TITULO'
