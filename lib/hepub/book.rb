@@ -11,7 +11,7 @@ module Hepub
     end
 
     def generate(_template_dir = 'epub_template')
-      epubname = File.join(File.dirname(__FILE__), "#{@metadata.title}.epub")
+      epubname = File.join(File.dirname(__FILE__), 'example_test_with_builder.epub')
       @epub.generate_epub(epubname)
     end
 
@@ -54,7 +54,6 @@ module Hepub
         metadata: @metadata,
         template_file: cover_path
       )
-
       add_cover_to_epub(cover_path, coverpage)
     end
 
