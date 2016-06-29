@@ -1,6 +1,5 @@
 module Hepub
-  require 'byebug'
-  class Cover
+  class CoverPage
     attr_reader :metadata, :template_file
 
     def initialize(metadata:, template_file:)

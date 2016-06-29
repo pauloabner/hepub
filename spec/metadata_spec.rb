@@ -13,4 +13,11 @@ RSpec.describe Hepub::Metadata do
       end
     end
   end
+
+  describe '#change_value' do
+    it 'changes the value' do
+      subject.change_value('TITLE', 'TITULO TROCADO')
+      expect(subject.value_of('TITLE')).to eq 'TITULO TROCADO'
+    end
+  end
 end
