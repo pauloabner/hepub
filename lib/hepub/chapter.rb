@@ -1,4 +1,5 @@
 module Hepub
+  # Chapter
   class Chapter
     attr_reader :title, :author, :sections
     def initialize(title, author)
@@ -8,10 +9,10 @@ module Hepub
     end
 
     def add_section(title, content)
-      chapter = Hash.new
-      chapter[:title] = title
-      chapter[:content] = content
-      @sections.push(chapter)
+      section = {}
+      section[:title] = title
+      section[:content] = content
+      @sections.push(section)
     end
 
     def count_sections
