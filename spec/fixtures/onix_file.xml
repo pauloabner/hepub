@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ONIXMessage SYSTEM "http://www.editeur.org/onix/2.1/reference/onix-international.dtd">
+<ONIXMessage>
+  <Header>
+    <FromCompany>SciELO Books</FromCompany>
+    <FromPerson>SciELO Books</FromPerson>
+    <SentDate>201606081546</SentDate>
+    <DefaultLanguageOfText>por</DefaultLanguageOfText>
+  </Header>
+  <Product>
+    <RecordReference>9788576286554</RecordReference>
+    <NotificationType>03</NotificationType>
+    <DOI>10.7476/9788576286554</DOI>
+    <ProductIdentifier>
+      <ProductIDType>15</ProductIDType>
+      <!-- 15 is for ISBN-13 -->
+      <IDValue>9788576286554</IDValue>
+    </ProductIdentifier>
+    <ProductForm>DG</ProductForm>
+    <EpubType>029</EpubType>
+    <!-- 029 is for ePubs, use 002 if PDF -->
+    <Title>
+      <TitleType>01</TitleType>
+      <TitleText>Colonização agrária no Norte do Paraná: processos geoeconômicos e sociogeográficos de desenvolvimento de uma zona subtropical do Brasil sob a influência da plantação de café</TitleText>
+    </Title>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Kohlhepp, Gerd</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Soethe, Paulo Astor</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Martineschen, Daniel</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Pereira, Caio Heleno da Costa</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Mathias, Dionei</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Antoniuk, Elisete</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Boechat, Fernanda Boarin</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Füllgraf, Frederico</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Silva, Natasha Pereira da</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Paulino, Sibele</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Neubauer, Sirlene Nair</PersonName>
+    </Contributor>
+    <Language>
+      <LanguageRole>01</LanguageRole>
+      <LanguageCode>pt</LanguageCode>
+    </Language>
+    <NumberOfPages>310</NumberOfPages>
+    <!-- Main Category, please use BISAC codes here -->
+    <BASICMainSubject>HIS038000</BASICMainSubject>
+    <!-- Other subject schemes -->
+    <OtherText>
+      <TextTypeCode>01</TextTypeCode>
+      <TextFormat>02</TextFormat>
+      <Text>O estudo de Gerd Kohlhepp constitui referência imprescindível para a descrição e compreensão do precesso de colonização agrária do Norte paranaense e oferece um excelente fundamento para a reflexão sobre seus desdobramentos até hoje. A obra não tem apenas o sentido hitórico, que por si mesmo já a justificaria, de registrar um produto de altíssimo nível científico da Geografia de tradição alemã; mais que isso, ela ainda torna acessivel a paranaenses, breasileiros e toda a comunidade lusófona umj desses textos de fundação do Brasil sob perspectiva e contribuição estrangeira, que hoje, ao se tornarem visíveis, ajudam a refletir sobre as características contemporaneas da sociedade local e sobre os caminhos futuros que ela pode tomar - ou não - nas próximas décadas.</Text>
+      <TextLinkType>01</TextLinkType>
+      <TextLink>http://books.scielo.org/id/yvqhq</TextLink>
+    </OtherText>
+    <Publisher>
+      <PublishingRole>01</PublishingRole>
+      <PublisherName>SciELO - EDUEM</PublisherName>
+    </Publisher>
+    <PublicationDate>20140101</PublicationDate>
+    <SalesRights>
+      <SalesRightsType>02</SalesRightsType>
+      <RightsTerritory>WORLD</RightsTerritory>
+    </SalesRights>
+    <RelatedProduct>
+      <RelationCode>13</RelationCode>
+      <ProductIdentifier>
+        <ProductIDType>02</ProductIDType>
+        <IDValue>9788576285441</IDValue>
+      </ProductIdentifier>
+    </RelatedProduct>
+    <CoverImageFormatCode>03</CoverImageFormatCode>
+    <CoverImageLinkTypeCode>01</CoverImageLinkTypeCode>
+    <CoverImageLink>http://books.scielo.org/id/yvqhq/cover/cover.jpeg</CoverImageLink>
+    <SupplyDetail>
+      <SupplierName>SciELO Books</SupplierName>
+      <ProductAvailability>20</ProductAvailability>
+      <OnSaleDate>20160608</OnSaleDate>
+      <Price>
+        <PriceTypeCode>01</PriceTypeCode>
+        <PriceAmount>0.00</PriceAmount>
+        <CurrencyCode>BRL</CurrencyCode>
+      </Price>
+    </SupplyDetail>
+  </Product>
+  <Product>
+    <RecordReference>9788523212308</RecordReference>
+    <NotificationType>03</NotificationType>
+    <DOI>10.7476/9788523212308</DOI>
+    <ProductIdentifier>
+      <ProductIDType>15</ProductIDType>
+      <!-- 15 is for ISBN-13 -->
+      <IDValue>9788523212308</IDValue>
+    </ProductIdentifier>
+    <ProductForm>DG</ProductForm>
+    <EpubType>029</EpubType>
+    <!-- 029 is for ePubs, use 002 if PDF -->
+    <Title>
+      <TitleType>01</TitleType>
+      <TitleText>Rosae: linguística histórica, história das línguas e outras histórias</TitleText>
+    </Title>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Lobo, Tânia</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Carneiro, Zenaide</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Soledade, Juliana</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Almeida, Ariadne</PersonName>
+    </Contributor>
+    <Contributor>
+      <SequenceNumber>1</SequenceNumber>
+      <ContributorRole>A01</ContributorRole>
+      <PersonName>Ribeiro, Silvana</PersonName>
+    </Contributor>
+    <Language>
+      <LanguageRole>01</LanguageRole>
+      <LanguageCode>pt</LanguageCode>
+    </Language>
+    <NumberOfPages>726</NumberOfPages>
+    <!-- Main Category, please use BISAC codes here -->
+    <BASICMainSubject>LAN009010</BASICMainSubject>
+    <!-- Other subject schemes -->
+    <OtherText>
+      <TextTypeCode>01</TextTypeCode>
+      <TextFormat>02</TextFormat>
+      <Text>Publicada pela EDUFBA e organizada por Tânia Lobo, Zenaide Carneiro, Juliana Soledade, Ariadne Almeida e Silvana Ribeiro, a obra é constituída por 48 artigos que apresentam investigações sobre o português arcaico e o português brasileiro com intuito de prestar homenagem à Profa. Dra. Rosa Virgínia Mattos e Silva, Professora Titular de Língua Portuguesa e Professora Emérita da Universidade Federal da Bahia (UFBA), falecida em julho de 2012.</Text>
+      <TextLinkType>01</TextLinkType>
+      <TextLink>http://books.scielo.org/id/67y3k</TextLink>
+    </OtherText>
+    <Publisher>
+      <PublishingRole>01</PublishingRole>
+      <PublisherName>SciELO - EDUFBA</PublisherName>
+    </Publisher>
+    <PublicationDate>20120101</PublicationDate>
+    <SalesRights>
+      <SalesRightsType>02</SalesRightsType>
+      <RightsTerritory>WORLD</RightsTerritory>
+    </SalesRights>
+    <RelatedProduct>
+      <RelationCode>13</RelationCode>
+      <ProductIdentifier>
+        <ProductIDType>02</ProductIDType>
+        <IDValue>9788523208448</IDValue>
+      </ProductIdentifier>
+    </RelatedProduct>
+    <CoverImageFormatCode>03</CoverImageFormatCode>
+    <CoverImageLinkTypeCode>01</CoverImageLinkTypeCode>
+    <CoverImageLink>http://books.scielo.org/id/67y3k/cover/cover.jpeg</CoverImageLink>
+    <SupplyDetail>
+      <SupplierName>SciELO Books</SupplierName>
+      <ProductAvailability>20</ProductAvailability>
+      <OnSaleDate>20160608</OnSaleDate>
+      <Price>
+        <PriceTypeCode>01</PriceTypeCode>
+        <PriceAmount>0.00</PriceAmount>
+        <CurrencyCode>BRL</CurrencyCode>
+      </Price>
+    </SupplyDetail>
+  </Product>
+</ONIXMessage>
