@@ -30,6 +30,7 @@ module Hepub
 
       metadata.change_value('TITLE', xml_doc.css(TITLE_PATH).first.text)
       metadata.change_value('AUTHOR', xml_doc.css(AUTHORS_PATH).first.text)
+      metadata.change_value('COVER_PATH', xml_doc.css(COVER_PATH).first.text)
       metadata
     end
   end

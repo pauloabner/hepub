@@ -15,7 +15,7 @@ module Hepub
     end
 
     def generate(_template_dir = 'epub_template')
-      epubname = File.join(File.dirname(__FILE__), "#{@metadata.title}.epub")
+      epubname = File.join(File.dirname(__FILE__), 'EBOOK.epub')
       @epub.generate_epub(epubname)
     end
 
