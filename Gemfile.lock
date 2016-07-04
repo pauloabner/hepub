@@ -3,6 +3,7 @@ PATH
   specs:
     hepub (0.0.1)
       gepub (= 0.6.9.2)
+      nokogiri (= 1.6.8)
 
 GEM
   remote: http://rubygems.org/
@@ -64,7 +65,7 @@ DEPENDENCIES
   factory_girl (= 4.7.0)
   hepub!
   rake (~> 10.0)
-  rspec
+  rspec (= 3.0.0)
   rspec-core (= 3.0.4)
 
 BUNDLED WITH

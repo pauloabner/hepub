@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+# Hepub
 module Hepub
+  # Metadata
   class Metadata
     # title_page
     attr_accessor :title, :subtitle, :author, :reference
@@ -8,11 +11,7 @@ module Hepub
     attr_accessor :chapter_title, :chapter_author
 
     def initialize(options = {})
-      self.title = options[:title]
-      self.subtitle = options[:subtitle]
-      self.author = options[:author]
-      self.reference = options[:reference]
-      self.cover_path = options[:cover_path]
+      setup(options)
       create_array
     end
 
@@ -36,6 +35,14 @@ module Hepub
         'CHAPTER_TITLE' => self.chapter_title ||= '{{ CHAPTER_TITLE }}',
         'CHAPTER_AUTHOR' => self.chapter_author ||= '{{ CHAPTER_AUTHOR }}'
       }
+    end
+
+    def setup(options)
+      self.title = options[:title]
+      self.subtitle = options[:subtitle]
+      self.author = options[:author]
+      self.reference = options[:reference]
+      self.cover_path = options[:cover_path]
     end
   end
 end

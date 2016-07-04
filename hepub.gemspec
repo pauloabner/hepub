@@ -19,10 +19,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'gepub', '0.6.9.2'
+  spec.add_dependency 'nokogiri', '1.6.8'
   spec.add_development_dependency 'bundler', '~> 1.11'
   spec.add_development_dependency 'byebug', '9.0.5'
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rspec', '3.0.0'
   spec.add_development_dependency 'rspec-core', '3.0.4'
   spec.add_development_dependency 'factory_girl', '4.7.0'
 end

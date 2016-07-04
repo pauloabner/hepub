@@ -1,8 +1,12 @@
+# frozen_string_literal: true
+# Hepub
 module Hepub
   require 'gepub'
   require 'byebug'
   # Book
   class Book
+    attr_accessor :onix_xml
+
     def initialize(metadata, template_dir = 'epub_template')
       @metadata = metadata
       @count_chapter = 0
@@ -11,7 +15,7 @@ module Hepub
     end
 
     def generate(_template_dir = 'epub_template')
-      epubname = File.join(File.dirname(__FILE__), "#{@metadata.title}.epub")
+      epubname = File.join(File.dirname(__FILE__), 'EBOOK.epub')
       @epub.generate_epub(epubname)
     end
 
@@ -25,6 +29,12 @@ module Hepub
       item.add_content(StringIO.new(chapter_page.to_s)).toc_text(title)
       @count_chapter += 1
       chapter.count_sections
+    end
+
+    def onix_xml=(file)
+      onix = Hepub::Onix.new(file)
+      @metadata = onix.metadata
+      setup(@template_dir)
     end
 
     private
@@ -54,7 +64,6 @@ module Hepub
         metadata: @metadata,
         template_file: cover_path
       )
-
       add_cover_to_epub(cover_path, coverpage)
     end
 

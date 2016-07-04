@@ -19,4 +19,10 @@ RSpec.describe Hepub::Book do
       expect(chapter_counter).to eq 2
     end
   end
+
+  describe '#onix_xml' do
+    it 'add onix xml file' do
+      expect(subject.onix_xml = 'spec/fixtures/onix_file.xml').to eq 'spec/fixtures/onix_file.xml'
+    end
+  end
 end
