@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe Hepub::TitlePage do
   let(:template_file) { 'spec/fixtures/file_with_tags.html' }
   let(:metadata) { Hepub::Metadata.new(options={ title: 'TITLE' }) }
-  subject { Hepub::TitlePage.new(template_file: template_file, metadata: metadata) }
+  subject { Hepub::TitlePage.new(metadata, template_file) }
 
   describe '#to_s' do
     it 'replace templates tags' do

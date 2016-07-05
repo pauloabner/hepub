@@ -22,9 +22,7 @@ module Hepub
     def add_chapter(title, author, sections = [])
       chapter = chapter_setup(title, author, sections)
       ch_page_filepath = "#{@template_dir}/chapter-page.html"
-      chapter_page = Hepub::ChapterPage.new(metadata: @metadata,
-                                            template_file: ch_page_filepath,
-                                            chapter: chapter)
+      chapter_page = Hepub::ChapterPage.new(@metadata, ch_page_filepath, chapter)
       item = @epub.add_ordered_item("#{@count_chapter}.xhtml")
       item.add_content(StringIO.new(chapter_page.to_s)).toc_text(title)
       @count_chapter += 1
@@ -60,17 +58,13 @@ module Hepub
 
     def cover_setup(template_dir)
       cover_path = "#{template_dir}/cover.html"
-      coverpage = Hepub::CoverPage.new(
-        metadata: @metadata,
-        template_file: cover_path
-      )
+      coverpage = Hepub::CoverPage.new(@metadata, cover_path)
       add_cover_to_epub(cover_path, coverpage)
     end
 
     def title_setup(template_dir)
       tp_path = "#{template_dir}/title-page.html"
-      titlepage = Hepub::TitlePage.new(metadata: @metadata,
-                                       template_file: tp_path)
+      titlepage = Hepub::TitlePage.new(@metadata, tp_path)
       if File.exist? tp_path
         ordered_item = @epub.add_ordered_item('title-page.xhtml')
         ordered_item.add_content(StringIO.new(titlepage.to_s))
