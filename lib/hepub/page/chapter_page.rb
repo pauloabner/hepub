@@ -2,9 +2,8 @@
 module Hepub
   # ChapterPage
   class ChapterPage
-    attr_reader :metadata, :template_file
 
-    def initialize(metadata:, template_file:, chapter:)
+    def initialize(metadata, template_file, chapter)
       @metadata = metadata
       @template_file = template_file
       @chapter = chapter
@@ -12,9 +11,9 @@ module Hepub
     end
 
     def to_s
-      template = Util.file_to_str template_file
+      template = Util.file_to_str @template_file
       tags.each do |tag|
-        template.gsub!("{{ #{tag} }}", metadata.value_of(tag))
+        template.gsub!("{{ #{tag} }}", @metadata.value_of(tag))
       end
       template = template_with_section template unless @chapter.sections.empty?
       template
@@ -23,7 +22,7 @@ module Hepub
     private
 
     def tags
-      Util.tags_from_file(template_file)
+      Util.tags_from_file(@template_file)
     end
 
     def add_chapter_to_metadata(chapter)
@@ -44,11 +43,11 @@ module Hepub
 
     def sections(tags)
       sections = ''
-      @chapter.sections.each do |s|        
+      @chapter.sections.each do |s|
         section_template = Util.file_to_str "#{@template_file}_section"
         add_section_to_metadata s
         tags.each do |tag|
-          section_template.gsub!("{{ #{tag} }}", metadata.value_of(tag))
+          section_template.gsub!("{{ #{tag} }}", @metadata.value_of(tag))
         end
         sections += section_template
       end
