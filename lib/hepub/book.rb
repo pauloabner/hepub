@@ -84,7 +84,6 @@ module Hepub
     end
 
     def add_cover_to_epub(cover_path, coverpage)
-      byebug
       if cover_path?
         @epub.add_item('images/cover.png', @metadata.cover_path).cover_image
       end
