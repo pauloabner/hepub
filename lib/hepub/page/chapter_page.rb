@@ -13,7 +13,6 @@ module Hepub
     def to_s
       template = Util.file_to_str @template_file
       tags.each do |tag|
-        byebug
         template.gsub!("{{ #{tag} }}", @metadata.value_of(tag))
       end
       template = template_with_section template unless @chapter.sections.empty?
