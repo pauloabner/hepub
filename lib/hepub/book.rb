@@ -16,7 +16,6 @@ module Hepub
     end
 
     def generate(_template_dir = 'epub_template')
-      byebug
       epubname = File.join(File.dirname(__FILE__), @output_filepath)
       @epub.generate_epub(epubname)
     end
