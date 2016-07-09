@@ -7,16 +7,15 @@ module Hepub
   class Book
     attr_accessor :onix_xml
 
-    def initialize(metadata, template_dir = 'epub_template', output_filepath = 'EBOOK.epub')
+    def initialize(metadata, template_dir = 'epub_template')
       @metadata = metadata
       @count_chapter = 0
       @template_dir = template_dir
-      @output_filepath = output_filepath
       setup(template_dir)
     end
 
-    def generate(_template_dir = 'epub_template')
-      epubname = File.join(File.dirname(__FILE__), @output_filepath)
+    def generate(_template_dir = 'epub_template', output_filepath = nil)
+      epubname = output_filepath.present? ? output_filepath : File.join(File.dirname(__FILE__), 'EBOOK.epub')
       @epub.generate_epub(epubname)
     end
 
