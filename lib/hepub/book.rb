@@ -14,7 +14,7 @@ module Hepub
       setup(template_dir)
     end
 
-    def generate(_template_dir = 'epub_template', , output_filepath = nil)
+    def generate(_template_dir = 'epub_template', output_filepath = nil)
       epubname = output_filepath.present? ? output_filepath : File.join(File.dirname(__FILE__), 'EBOOK.epub')
       @epub.generate_epub(epubname)
     end
