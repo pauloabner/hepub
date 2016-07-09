@@ -3,7 +3,7 @@ PATH
   specs:
     hepub (0.0.1)
       gepub (= 0.6.9.2)
-      nokogiri
+      nokogiri (= 1.6.8)
 
 GEM
   remote: http://rubygems.org/
@@ -70,4 +70,4 @@ DEPENDENCIES
   rspec-core (= 3.0.4)
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
