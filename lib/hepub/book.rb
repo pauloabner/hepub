@@ -2,6 +2,7 @@
 # Hepub
 module Hepub
   require 'gepub'
+  require 'byebug'
   # Book
   class Book
     attr_accessor :onix_xml
@@ -14,6 +15,7 @@ module Hepub
     end
 
     def generate(output_filepath = nil)
+      byebug
       epubname = output_filepath.present? ? output_filepath : File.join(File.dirname(__FILE__), 'EBOOK.epub')
       @epub.generate_epub(epubname)
       epubname
