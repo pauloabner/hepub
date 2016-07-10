@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'hepub'
-  spec.version       = '0.0.2'
+  spec.version       = '0.0.3'
   spec.authors       = ['Paulo Abner Aurelio Mesquita']
   spec.email         = ['pauloabner@gmail.com']
 
-  spec.summary       = %q{ A summary. }
-  spec.description   = %q{ A description. }
+  spec.summary       = %q{ Create epub based in templates. }
+  spec.description   = %q{ Create epub based in templates. }
   spec.homepage      = 'https://github.com/pauloabner'
   spec.license       = 'MIT'
 

@@ -2,7 +2,6 @@
 # Hepub
 module Hepub
   require 'gepub'
-  require 'byebug'
   # Book
   class Book
     attr_accessor :onix_xml
