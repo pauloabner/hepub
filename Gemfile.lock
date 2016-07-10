@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    hepub (0.0.1)
+    hepub (0.0.4)
+      byebug (= 9.0.5)
       gepub (= 0.6.9.2)
       nokogiri (= 1.6.8)
 
@@ -61,7 +62,6 @@ PLATFORMS
 DEPENDENCIES
   activesupport (= 4.2.5.2)
   bundler (~> 1.11)
-  byebug (= 9.0.5)
   codeclimate-test-reporter
   factory_girl (= 4.7.0)
   hepub!
