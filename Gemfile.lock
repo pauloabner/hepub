@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     hepub (0.0.4)
-      byebug (= 9.0.5)
+      byebug (= 8.2.4)
       gepub (= 0.6.9.2)
       nokogiri (= 1.6.8)
 
@@ -15,7 +15,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    byebug (9.0.5)
+    byebug (8.2.4)
     codeclimate-test-reporter (0.6.0)
       simplecov (>= 0.7.1, < 1.0.0)
     diff-lcs (1.2.5)
