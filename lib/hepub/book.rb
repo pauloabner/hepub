@@ -17,7 +17,9 @@ module Hepub
       epubname = output_filepath.present? ? output_filepath : File.join(File.dirname(__FILE__), 'EBOOK.epub')
       @epub.generate_epub(epubname)
       epubname
-    rescue
+    rescue Exception => e
+      logger.info "Erro generating epub"
+      logger.info e
       nil
     end
 
