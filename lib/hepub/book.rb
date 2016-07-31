@@ -50,6 +50,7 @@ module Hepub
       images_setup(template_dir)
       cover_setup(template_dir)
       title_setup(template_dir) if pages.include? 'titlepage'
+      isbn_setup(template_dir) if pages.include? 'isbnpage'
     end
 
     def css_setup(template_dir)
@@ -109,6 +110,15 @@ module Hepub
         arr.push(line.gsub("\r\n",'').gsub("\n",''))
       end
       arr
+    end
+
+    def isbn_setup template_dir
+      ip_path = "#{template_dir}/isbn-page.html"
+      if File.exist? ip_path
+        isbnpage = Hepub::IsbnPage.new(@metadata, ip_path)
+        ordered_item = @epub.add_ordered_item('isbn-page.xhtml')
+        ordered_item.add_content(StringIO.new(isbnpage.to_s))
+      end
     end
   end
 end
