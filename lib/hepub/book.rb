@@ -5,11 +5,13 @@ module Hepub
   # Book
   class Book
     attr_accessor :onix_xml
+    attr_reader :pages
 
     def initialize(metadata, template_dir = 'epub_template')
       @metadata = metadata
       @count_chapter = 0
       @template_dir = template_dir
+      @pages = pages_config(template_dir)
       setup(template_dir)
     end
 
@@ -47,7 +49,7 @@ module Hepub
       css_setup(template_dir)
       images_setup(template_dir)
       cover_setup(template_dir)
-      title_setup(template_dir)
+      title_setup(template_dir) if pages.include? 'titlepage'
     end
 
     def css_setup(template_dir)
@@ -96,6 +98,17 @@ module Hepub
         ordered_item = @epub.add_ordered_item('cover.xhtml')
         ordered_item.add_content(StringIO.new(coverpage.to_s))
       end
+    end
+
+    def pages_config template_dir
+      config_filepath = template_dir + '/pages.conf'
+      arr = []
+      return arr unless File.exists? config_filepath
+      f = File.read(config_filepath)
+      f.each_line do |line|
+        arr.push(line.gsub("\r\n",'').gsub("\n",''))
+      end
+      arr
     end
   end
 end
