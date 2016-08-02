@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hepub (0.0.7)
+    hepub (0.0.8)
       byebug (= 8.2.4)
       gepub (= 0.6.9.2)
       nokogiri (= 1.6.8)
